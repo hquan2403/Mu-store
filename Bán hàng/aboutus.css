@@ -13,7 +13,7 @@
   height: 100vh;
   width: 100%;
   padding: 90px 0;
-  background: #CFE1B9;
+  background: white;
 }
 
 .pic {
@@ -125,22 +125,18 @@ span {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem; 
     font-weight: bold; 
-    color: black; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+    color: white; 
+    
     margin-bottom: 10px;
-  }
-  .h1:hover {
-    transition: transform 0.3s ease, color 0.3s ease;
-    transform: translateX(5px); 
-    color: #3498db; /* Đổi màu chữ khi hover */
-    transform: translateY(-10px);
+    background-color: rgb(20, 19, 19);
+    
   }
   
   #footer {
     width: 100%;
     background-color: rgb(20, 19, 19);
     height: 322px;
-    margin-top:150px;
+    margin-top:-9.7px;
     padding:0px 63px;
     padding-top:57px;
     display: flex;
@@ -219,3 +215,13 @@ form button:hover {
     color: #3498db; 
 }
 
+@keyframes flyInFade {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

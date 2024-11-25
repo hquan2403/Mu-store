@@ -1,3 +1,4 @@
+
    /* thanh điều hướng */
 * {
     margin: 0;
@@ -131,10 +132,10 @@ li {
    justify-content: space-between;
 }
 .slider-content-left {
-   width: 100%;
+   width: 80%;
 }
 .slider-content-left-top {
-   width: 100%;
+   width: 200%;
    height: 300px;
    position: relative;
 }
@@ -153,13 +154,7 @@ li {
  transform: scale(1.1); 
  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); 
 }
-.slider-content-bottom {
-   display: flex;
-   justify-content: space-between;
-   border: 2px solid #728156;
-   border-top: none;
-   height: 50px;
-}
+
 .slider-content-bottom li {
    width: 20%;
    text-align: center;
@@ -183,6 +178,7 @@ li {
 }
 .slider-content-right {
  gap: 20px;
+ width: 110%;
  display: flex;
  flex-wrap: wrap;
  padding: 0 20px;
@@ -198,10 +194,7 @@ li {
  transition: transform 0.3s ease, border-color 0.3s ease;
  border: 5px solid #728156;
 }
-.slider-content-right img:hover {
- transform: scale(1.1); 
- border-color: #3498db; 
-}
+
 
 /* con trỏ ảnh */
 .slider-content-left-top-btn {
@@ -266,7 +259,8 @@ video:hover {
  margin: 100px auto; 
  text-align: center;
  padding: 20px;
- background-color: #b6c99b;
+ background-color: white;
+ border:3px solid #728156;
  border-radius: 10px;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
  opacity: 0;
@@ -294,7 +288,7 @@ video:hover {
  display: none;
  font-size: 16px;
  color: #444;
- background-color: #e0e0e0;
+ background-color: #728156;
  padding: 15px;
  border-radius: 8px;
  margin-top: 20px;
@@ -360,13 +354,78 @@ video:hover {
 .more-text a p {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: white;
   transition: all 0.3s ease; 
 }
 
 
 .more-text a p:hover {
-  color: #3498db; 
+  color: black; 
   transform: scale(1.1); 
 }
 
+.more-text:hover {
+  background: #B6C99B;
+  transform: scale(1.02); 
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+ }
+
+
+ @keyframes flyInFade {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes flyInFade1 {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+@keyframes flyInFade2 {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+@keyframes flyInFade3 {
+  0% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(100px);
+  }
+}
+
+
+@keyframes flyInFade4 {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

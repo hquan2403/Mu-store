@@ -17,8 +17,11 @@ function isElementInViewport(el) {
       content.classList.add('visible');
     }
   });
-  
 
 
-  
-  
+// Khởi tạo carousel bằng JavaScript
+var myCarousel = document.querySelector('#demo');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,  // Chuyển slide tự động mỗi 2 giây
+  ride: 'carousel' // Chạy carousel ngay khi trang được tải
+});
